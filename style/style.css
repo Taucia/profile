@@ -136,14 +136,20 @@ img {
 }
 
 #resume div {
-    border: 2px solid black;
-    width: 100px;
-    height:100px;
-    padding:100px;
+        border: 2px solid black;
+    width: 700px;
+    height:fit-content;
+    list-style: circle;
+    padding:10px;
     margin:auto;
     text-align: center;
     background-color:mediumorchid;
 
+}
+
+#resume div > ul{
+list-style-position: inside;
+display: inline-block;
 }
 
 }
