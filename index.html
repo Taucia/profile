@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style.css"> <'https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>my profile</title>
 </head>
 
@@ -33,9 +33,9 @@
                             <button class="dropbtn"><a href="#about">About</a></button>
                             <div class="dropdown-content">
 
-                                <a href="#">About you</a>
-                                <a href="#">Skills</a>
-                                <a href="#">Testimonials</a>
+                                <a href="#about you">About you</a>
+                                <a href="#skills">Skills</a>
+                                <a href="#testimonials">Testimonials</a>
 
                             </div>
 
@@ -49,9 +49,16 @@
                             <button class="dropbtn"><a href="#resume">resume</a></button>
                             <div class="dropdown-content">
 
-                                <a href="#">Education</a>
-                                <a href="#">Work Experience</a>
+                                <a href="#education">Education</a>
+                                <a href="#experience">Work Experience</a>
 
+
+                            </div>
+                    </li> <li>
+                        <!-- <a href="#">contact</a> -->
+                        <div class="dropdown">
+                            <button class="dropbtn"><a href="#projects">projects</a></button>
+                            <div class="dropdown-content">
 
                             </div>
                     </li>
@@ -61,9 +68,9 @@
                             <button class="dropbtn"><a href="#contact">contact</a></button>
                             <div class="dropdown-content">
 
-                                <a href="#">Form</a>
-                                <a href="#">Social media accounts</a>
-                                <a href="#">Contact details</a>
+                                <a href="#form">Form</a>
+                                <a href="#social media">Social media accounts</a>
+                                <a href="#contact details">Contact details</a>
 
                             </div>
                     </li>
@@ -84,15 +91,15 @@
         <br>
         <section id="about">
             <div>
-                <H1>about</H1>
+                <h1>about</h1>
             </div>
-                <h2>about you
-                     <p>i am currently learning and working at life choices.i aspire to become a web developer and to learn
+            <h2 class="about you">about you
+                <p>i am currently learning and working at life choices.i aspire to become a web developer and to learn
                     all that i can to be a great worker,i studied at college of cape town my national vocational
                     certificate.</p>
-            
-                </h2>
-               </div>
+
+            </h2>
+            </div>
             <br>
             <div id="skillsContainer">
                 <h1 id="idk">
@@ -101,35 +108,65 @@
 
                 <div class="skills">
                     <p>teamwork</p>
-                    <progress value="80" max="100" ></progress>
+                    <progress value="80" max="100"></progress>
                 </div>
                 <div class="skills">
-                  <P>communication</P>
+                    <P>communication</P>
                     <progress value="70" max="100"></progress>
-                </div><div class="skills">
+                </div>
+                <div class="skills">
                     <p>punctual</p>
                     <progress value="100" max="100"></progress>
-                </div><div class="skills">
+                </div>
+                <div class="skills">
                     <p>first aid</p>
                     <progress value="100" max="100"></progress>
                 </div>
             </div>
+            </section>
 
-            <div>
+            <div class="testimonials" id="test">
                 <h1>
                     Testimonials
                 </h1>
+
+                <div class="container">
+                    <div id="card">
+                        <div id="front">
+                           
+                            <p>
+                                abdus samad charles
+
+                                <br>
+                                Lorem ipsum, dolor sit amet consecteturdipisicing elit. Impedit praesentium earum,
+                                nulla laudantium dolor, veniam pariatur maxime distinctio accusamus eveniet dignissimos
+                                eius aut blanditiis inventore dicta delectus, necessitatibus consectetur ab.
+                            </p>
+                           
+                        </div>
+                        <div id="back">
+                            
+                            <p>
+                               Micheala Ward
+
+                               <Br>
+                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente tempora temporibus obcaecati quisquam possimus, cum laudantium molestias. Error eos ea in consequuntur doloribus commodi, veniam repellat tempora vel fuga amet?
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+       
         <br>
         <section id="resume">
             <h1>
                 resume
             </h1>
             <br>
-            <div>
+            <div id="education">
 
-                <h2>Education</h2>
+                <h2 >Education</h2>
 
                 <ul>
                     <li> Matriculated 2017 -Princeton High School</li>
@@ -137,7 +174,7 @@
                 </ul>
             </div>
             <br>
-            <div>
+            <div id="experience">
                 <h2>Work Experience</h2>
                 <ul>
                     <li>Catering -La Elagante 2018</li>
@@ -153,12 +190,12 @@
                 contact
             </h1>
             <div>
-                <h2>Form</h2>
+                <h2 class="form">Form</h2>
 
                 <form class="form" action="https://formspree.io/f/mdobpnno" method="POST">
                     <label>
                         Your email:
-                        <input type="email" name="email">
+                        <input name="email" type="email" name="email">
                     </label>
                     <label>
                         Your message:
@@ -167,6 +204,12 @@
                     <!-- your other form fields go here -->
                     <button type="submit">Send</button>
                 </form>
+            </div>
+            <div class="social media">
+                social media
+            </div>
+            <div class="contact details">
+                contact details
             </div>
         </section>
     </main>
